@@ -3,23 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
     <title>Gallery</title>
 </head>
 <body>
     <div class="wave"></div>
     <div class="wave"></div>
     <div class="wave"></div>
-    <h2 class="major">Gallery</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-                                <nav>
-                                    <ul>
-                                        <li><a href = "index.html">Home</a></li>
-                                        <!--<li><a href="#elements">Elements</a></li>-->
-                                    </ul>
-                                </nav>
+                                 <!--navigation bar-->
+                                 <nav class="navbar">
+                                    <div class="navdiv">
+                                        <div class="logo"><a href="#">Gallery</a></div>
+                                        <ul>
+                                            <li><a href = "index.html">Home</a></li>
+                                            <li><a href = "Hobby.html">Hobbies</a></li>
+                                        </ul>
+                                    </div>    
+                                </nav>   
 
+								<!--image-->
+                                <div class="full-img" id="fullImgBox">
+                                    <img src="images/my-cat.jpg" id="fullImg">
+                                    <span onclick="closeFullImg()">X</span>
+                                </div>
+                                <div class="img-gallery">
+                                    <img src="images/my-cat.jpg" onclick="openFullImg(this.src)">
+                                    <img src="images/my-cat.jpg" onclick="openFullImg(this.src)">
+                                    <img src="images/my-cat.jpg" onclick="openFullImg(this.src)">
+                                    <img src="images/my-cat.jpg" onclick="openFullImg(this.src)">
+                                    <img src="images/my-cat.jpg" onclick="openFullImg(this.src)">
+                                    <img src="images/my-cat.jpg" onclick="openFullImg(this.src)">
+                                    <img src="images/my-cat.jpg" onclick="openFullImg(this.src)">
+                                    <img src="images/my-cat.jpg" onclick="openFullImg(this.src)">
+                                </div>
+                                <script>
+
+                                    var fullImgBox = document.getElementById("fullImgBox");
+                                    var fullImg = document.getElementById("fullImg")
+
+                                    function openFullImg(pic){
+                                        fullImgBox.style.display = "flex";
+                                        fullImg.src = pic;
+
+                                    }
+
+                                    function closeFullImg(){
+                                        fullImgBox.style.display = "none";
+                                    }
+
+                                </script>
                             </body>
 </html>
