@@ -1,5 +1,7 @@
-body {
+
+body{
     margin: auto;
+    padding: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
     background: linear-gradient(315deg, #fb35d3 3%, #ffc4d6 38%, #e18aaa 68%, #ffa6c1 98%);
@@ -9,6 +11,21 @@ body {
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
+}
+/*pfp*/
+.image{
+    width: 100%;
+    height: 100vh;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid black;
 }
 
 @keyframes gradient {
@@ -78,21 +95,9 @@ body {
     border-radius: 1rem;
   }
   
-  /* CSS Inner Shadow Code */
-  .inner-shadow {
-    width: 150px;
-    height: 150px;
-    box-shadow: inset gray 0px 0px 60px -12px; 
-  }
-  
-  .inline-block {
-    display: inline-block;
-    width: auto;
-    height: auto;
- }
  /*navigation bar*/
 .navbar{
-    background: #b506b5; 
+
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -104,15 +109,16 @@ body {
 .logo a{
     font-size: 35px;
     font-weight: 600;
-    color: #fff;
+    color: black;
 }
 .li{
     list-style: none;
     display: inline-block;
 }
 li a{
-    color: #fff;
+    color: black;
     font-size: 18px;
     font-weight: bold;
     margin-right: 25px;
 }
+
