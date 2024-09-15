@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/hobby.css">
     <title>hobbies</title>
 </head>
 <body>
+    <!--effects-->
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+
     <div class="wave"></div>
     <div class="wave"></div>
     <div class="wave"></div>
@@ -21,6 +34,23 @@
                     </ul>
             </div>    
         </nav>   
+        <p>i like to play with cats, go camping, take picture's of sea </p>
+
+								<!--image-->
+                                <div class="full-img" id="fullImgBox">
+                                    <img src="images/my-cat.jpg" id="fullImg">
+                                    <span onclick="closeFullImg()">X</span>
+                                </div>
+                                <div class="image">
+                                <div class="img-gallery">
+                                    <img src="images/my-cat.jpg" onclick="openFullImg(this.src)">
+                                    <img src="images/camping-pic.jpg" onclick="openFullImg(this.src)">
+                                    <img src="images/hayama.jpg" onclick="openFullImg(this.src)">
+                                </div>
+                                </div>
+                                <script src="JS/gallery.js"></script>
+                                <script src="JS/cursor.js"></script>
+
 
 
         

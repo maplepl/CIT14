@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    text-decoration: none;
-}
+
 body{
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -15,6 +10,7 @@ body{
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 @keyframes gradient {
     0% {
@@ -83,19 +79,6 @@ body{
     border-radius: 1rem;
   }
   
-  /* CSS Inner Shadow Code */
-  .inner-shadow {
-    width: 150px;
-    height: 150px;
-    box-shadow: inset gray 0px 0px 60px -12px; 
-  }
-  
-  .inline-block {
-    display: inline-block;
-    width: auto;
-    height: auto;
- }
-
 .img-gallery{
     width: 80%;
     margin: 100px auto 50px;
@@ -107,6 +90,8 @@ body{
     width: 100%;
     cursor: pointer;
     transition: 0.4s;
+    border-radius: 5px;
+
 }
 
 .img-gallery img:hover{
@@ -168,3 +153,16 @@ li a{
     font-weight: bold;
     margin-right: 25px;
 }
+
+/*Cursor*/
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
